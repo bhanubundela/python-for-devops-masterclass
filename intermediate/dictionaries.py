@@ -11,6 +11,10 @@ dict_of_cloud_services = {
 print("AWS stands for", dict_of_cloud_services["aws"])
 print("Azure stands for", dict_of_cloud_services["azure"])
 print("GCP stands for", dict_of_cloud_services["gcp"])
+print("GCP stands for", dict_of_cloud_services.get("gcp"))
+print("GCP stands for", dict_of_cloud_services.get("oracle", "not found"))
+
+
 
 # Output:
 """
@@ -18,5 +22,9 @@ print("GCP stands for", dict_of_cloud_services["gcp"])
 AWS stands for Amazon Web Services
 Azure stands for Microsoft Azure
 GCP stands for Google Cloud Platform
+GCP stands for Google Cloud Platform
+GCP stands for not found
 
 """
+
+
